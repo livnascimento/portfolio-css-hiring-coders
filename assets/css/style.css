@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    --linen: #FBEAE2;
+    --purple: #A36384;
+    --livid-brown: #532F45;
+    --fuzzy-brown: #BE5E53;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--linen);
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li {
+    padding-left: 30px;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../images/background.jpg');
+    background-size: cover;
+}
+
+#container {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    color: white;
+}
+
+#about-me {
+    margin: 3% 0;
+}
+
+#name {
+    font-size: 130%;
+}
+
+#name h4 {
+    font-weight: 300;
+}
+
+#description {
+    display: none;
+}
+
+#description.show {
+    display: block;
+}
+
+#description p {
+    max-width: 65%;
+    margin: 0 auto;
+    padding:  20px 0 20px 0;
+}
+
+.fa-solid {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.fa-solid:hover {
+    color: white;
+}
+
+#form {
+    width: 40%;
+    margin: 0 auto 30px auto;
+}
+
+#form p {
+    margin: 20px 0 10px 0;
+    font-size: 90%;
+}
+
+#form input {
+    width: 65%;
+    padding: 5px 10px;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--fuzzy-brown);
+    border: none;
+}
+
+#form input::placeholder {
+    color: var(--linen);
+}
+
+#form button {
+    width: fit-content;
+    border: none;
+    padding: 5px 10px;
+    background-color: var(--fuzzy-brown);
+    border-radius: 0 10px 10px 0;
+}
+
+.cards {
+    display: flex;
+    flex: 1 1 1;
+    padding: 0 5%;
+    justify-content: space-evenly;
+}
+
+.cards div {
+    flex-basis: 100%;
+    margin: 1%;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    padding: 15px;
+    border-radius: 10px;
+    text-align: start;
+    background: linear-gradient(45deg, rgba(190, 94, 83, 0.5), rgba(163, 99, 132, 0.5) 60%);
+}
+
+.card:hover {
+    background: linear-gradient(45deg, rgba(190, 94, 83, 0.7), rgba(163, 99, 132, 0.7) 60%);
+}
+
+.card button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: var(--fuzzy-brown);
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.card div i {
+    font-size: 25px;
+    margin: 1% 7% 0 0;
+}
+
+.cards .card.info {
+    background: transparent;
+    text-align: center;
+}
+
+.card.info i {
+    font-size: 50px;
+}
+
+#more-about-me h2 {
+    margin: 30px 0;
+}
+
+footer div {
+    margin-top: 50px;
+}
+
+@media (max-width: 620px) {
+    *{
+        font-size: 96%;
+    }
+    header {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    *{
+        font-size: 94%;
+    }
+    header {
+        font-size: 80%;
+    }
+}
